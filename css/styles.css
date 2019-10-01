@@ -1,0 +1,244 @@
+/* -- GLOBAL FIRST ---------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* ------------ GLOBAL ------------ */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/* ------------ COMMON TAGS ------------ */
+
+h1
+{
+    font-weight: 900;
+    font-size: 250%;
+}
+
+h2
+{
+    font-weight: 300;
+    font-size: 120%;
+}
+
+/* -- ROWS & SPECIAL TAGS --------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.row
+{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 69, 79, 0.80)), to(rgba(154, 154, 154, 0.10))), url(../images/trees.jpg);
+    background-image: linear-gradient(rgba(54, 69, 79, 0.80), rgba(154, 154, 154, 0.10)), url(../images/trees.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* -- NAVIGATION ------------------------------------------------ */
+/* -------------------------------------------------------------- */
+
+.main-nav
+{
+    height: 55px;
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.main-nav li
+{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 140%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    padding: 4px 0 2px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+}
+
+.nav-seperate
+{
+    font-size: 200%;   
+}
+
+/* -- FRONT PAGE ------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.main-page
+{
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+}
+
+.main-page img
+{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 10px 10px 70px #1c1c1c;
+    box-shadow: 10px 10px 70px #1c1c1c;
+}
+
+.main-page h1, .main-page h2, .icon-big
+{
+    color: #fff;
+}
+
+.main-page h1
+{
+    margin-bottom: 10px;
+}
+
+.icon-big
+{
+    font-size: 245%;
+    display: block;
+    margin-top: 175px;
+    position: absolute;
+    bottom: -55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 55%);
+    transform: translate(-50%, 55%);
+    -webkit-transition: font-size 0.2s;
+    transition: font-size 0.2s;
+}
+
+.main-page a:hover,
+.main-page a:active
+{
+    font-size: 125%;
+}
+
+
+/* -- PROJECTS PAGE --------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.main-details .row
+{
+    max-width: 1450px;
+}
+.main-details
+{
+    padding: 30px;
+    background-color: #575757;
+    color: #575757;
+}
+
+.main-details h1
+{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.main-details h2
+{
+    font-size: 140%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-layouts
+{
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 70px #1c1c1c;
+    box-shadow: 10px 10px 70px #1c1c1c;
+    padding: 50px 10px;
+    margin: 50px 10px 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ------------ CARD INFO SETUP ------------ */
+
+.icon-loading
+{
+    font-size: 350%;
+    color: #fff;
+    text-align: center;
+    padding-top: 73px;
+    background-color: #575757;
+}
+
+.card-layouts img,
+.icon-loading
+{
+    display: block;
+    width: 375px;
+    height: 220px;
+    margin: 0 auto;
+    border: 3px solid rgb(235, 235, 235);
+    -webkit-box-shadow: 10px 10px 50px #717171;
+    box-shadow: 10px 10px 50px #717171;
+    opacity: 1;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+/* ------------ POP OUT FOR CARDS ------------ */
+
+.card-layouts img:hover,
+.icon-loading:hover
+{
+    opacity: 0.90;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

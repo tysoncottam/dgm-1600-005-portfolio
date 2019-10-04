@@ -59,3 +59,39 @@
         font-size: 105%;
     }
 }
+
+@media only screen and (max-width: 800px)
+{
+    .col
+    {
+        width: 100%;   
+        margin: 0 0 4% 0;
+    }
+     html
+    {
+        font-size: 15px;
+    }   
+    .projects .row
+    {
+        max-width: 400px;
+    }    
+    .project-tile
+    {
+        padding: 30px 5px;
+        margin: 30px 5px;
+    }
+    .project-tile img,
+    .icon-loading
+    {
+        width: 300px;
+        height: 180px;
+    }
+    .icon-loading
+    {
+        padding-top: 60px;
+    }
+    .project-tile h2
+    {
+        font-size: 110%;
+    }
+}

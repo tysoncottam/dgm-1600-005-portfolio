@@ -28,41 +28,43 @@
 <!------------------------------ body ------------------------------>
     <body>
         
-        <!--------------- header & nav --------------->
-        <header>
+        <div id="welcome-section">
+            <!--------------- java background mute --------------->
+            <div class="java-background-mute"></div>
+            
+            <!--------------- nav section --------------->
             <nav>
-                <div class="nav-wrapper">
-                    <div class="row">
-                        <ul class="main-nav">
-                            <li><a href="#main-details">PROJECTS</a></li>
-                            <li class="nav-seperate">&#124;</li>
-                            <li><a href="https://www.linkedin.com/in/tyson-cottam-174450161/">BIO</a></li>
-                            <li class="nav-seperate">&#124;</li>
-                            <li><a href="https://www.facebook.com/cottamtyson">INTERESTS</a></li>
-                            <li class="nav-seperate">&#124;</li>
-                            <li><a href="#">RESUME</a></li>
-                        </ul>
-                    </div>
+                <div class="row">
+                    <ul id="navbar">
+                    <li><a href="#projects">PROJECTS</a></li>
+                        <li class="nav-seperate">&#124;</li>
+                        <li><a href="https://www.linkedin.com/in/tyson-cottam-174450161/">BIO</a></li>
+                        <li class="nav-seperate">&#124;</li>
+                        <li><a href="https://www.facebook.com/cottamtyson">INTERESTS</a></li>
+                        <li class="nav-seperate">&#124;</li>
+                        <li><a href="#">RESUME</a></li>
+                    </ul>
+                </div>
                 </div>
             </nav>
-        </header>
 
-        <!--------------- profile pic --------------->
-        <div class="main-page">
-                <img src="PORTFOLIO/images/baby-tyson.jpg" alt="baby-tyson-pic">
-                <h1>Hi, I'm Tyson.</h1>
-                <h2>Web Designer, Father, Hoodie Enthusiast</h2>
-                <a href="#main-details"><i class="ion-chevron-down icon-big"></i></a>
+            <!--------------- profile pic --------------->
+            <div class="bio-info">
+                    <a href="https://github.com/tysoncottam" target="_blank"><img src="PORTFOLIO/images/tyson-pic-profile.jpg" alt="tyson-pic"></a>
+                    <h1>Hi, I'm Tyson.</h1>
+                    <h2>Web Designer, Father, Hoodie Enthusiast</h2>
+                    <a href="#projects"><i class="ion-chevron-down icon-big"></i></a>
+            </div>
         </div>
 
         <!--------------- main page --------------->
-        <main id="main-details">
-            <section class="main-details">
+        <main id="projects">
+            <section class="projects">
                 <h1>My Projects:</h1>
                 
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <div class="card-layouts">
+                        <div class="project-tile">
                             <div>
                                 <h2>Project 1: Omnifood</h2>
                                 <a href="OMNIFOOD/index.html"><img src="PORTFOLIO/images/omnifood-preview.jpg" alt="omnifood-preview"></a>
@@ -70,7 +72,7 @@
                         </div>
                     </div>
                     <div class="col span-1-of-3">
-                        <div class="card-layouts">
+                        <div class="project-tile">
                             <div>
                                 <h2>Project 2: Device Identity</h2>
                                 <a href="DGM-2740-WebLanguages/unit1-device-testing/index.html"><img src="PORTFOLIO/images/unit-1-project-preview.jpg" alt="unit 1-preview"></a>
@@ -78,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col span-1-of-3">
-                        <div class="card-layouts">
+                        <div class="project-tile">
                             <div>
                                 <h2>Project 3: Personal Intersts</h2>
                                 <a href="DGM-1600-ScriptingWeb/PracticeProject1-TTC/index.html"><img src="DGM-1600-ScriptingWeb/PracticeProject1-TTC/images/personal-intersts.jpg" alt="personal-interests-preview"></a>
@@ -89,7 +91,7 @@
 
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <div class="card-layouts">
+                        <div class="project-tile">
                             <div>
                                 <h2>Project 4: Science Museum</h2>
                                 <a href="DGM-2740-WebLanguages/unit2-science-museum/index.html"><img src="PORTFOLIO/images/science-museum-preview.jpg" alt="omnifood-preview"></a>
@@ -97,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col span-1-of-3">
-                        <div class="card-layouts">
+                        <div class="project-tile">
                             <div>
                                 <h2>Project 5: Fruit Stand</h2>
                                 <a href="DGM-2740-WebLanguages/unit3-fruit-stand/index.html"><img src="PORTFOLIO/images/fruit-preview.jpg" alt="fruit-preview"></a>
@@ -105,7 +107,7 @@
                         </div>
                     </div>
                     <div class="col span-1-of-3">
-                        <div class="card-layouts">
+                        <div class="project-tile">
                             <div>
                                 <h2>Project 6: Coming Soon!</h2>
                                 <i class="ion-code-download icon-loading"></i>

@@ -95,14 +95,14 @@ header
     text-align: center;
 }
 
-header h1
+h1
 {
     font-size: 175%;
 }
 
-header h2
+h2
 {
-    font-size: 120%;
+    font-size: 130%;
 }
 
 /* --------------- nav --------------- */
@@ -146,6 +146,8 @@ main
 main h2
 {
     margin-bottom: 10px;
+    font-size: 150%;
+    overflow: hidden;
 }
 
 main div

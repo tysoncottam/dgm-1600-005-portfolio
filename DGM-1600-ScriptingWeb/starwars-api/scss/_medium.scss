@@ -3,8 +3,11 @@ nav li
     float: left;
     width: $one-forth;
 }
-
 main div
 {
     flex-basis: 33%;
+}
+main h2
+{
+    font-size: 120%;
 }

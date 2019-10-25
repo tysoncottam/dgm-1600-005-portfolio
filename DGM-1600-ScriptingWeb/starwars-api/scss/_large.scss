@@ -7,18 +7,19 @@ nav
 {
     width: 100%;
 }
+
 nav ul
 {
-    padding-left: $gutter;
+    text-align: center;
 }
+
 nav li
 {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 16px;
+    float: none;
     width: auto;
-    margin: auto;
-}
-nav a
-{
-    padding: $large-nav-padding;
 }
 main div
 {

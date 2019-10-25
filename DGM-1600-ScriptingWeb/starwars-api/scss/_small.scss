@@ -122,7 +122,7 @@ nav a
     text-decoration: none;
 }
 
-nav a:hover
+nav li:hover
 {
     background-color: darken($website-theme, 13%);
     transition: background-color 0.2s;

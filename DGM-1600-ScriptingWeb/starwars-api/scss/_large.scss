@@ -3,10 +3,7 @@ header, nav, .hero-section, main, footer
     max-width: $max-width;
     margin: auto;
 }
-nav
-{
-    width: 100%;
-}
+
 nav ul
 {
     text-align: center;
@@ -14,7 +11,6 @@ nav ul
 nav li
 {
     display: inline-block;
-    margin: 0 auto;
     padding: 0 16px;
     float: none;
     width: auto;

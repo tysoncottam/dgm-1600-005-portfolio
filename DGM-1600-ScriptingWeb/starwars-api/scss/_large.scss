@@ -3,6 +3,10 @@ header, nav, .hero-section, main, footer
     max-width: $max-width;
     margin: auto;
 }
+nav
+{
+    width: 100%;
+}
 nav ul
 {
     padding-left: $gutter;
@@ -10,12 +14,13 @@ nav ul
 nav li
 {
     width: auto;
+    margin: auto;
 }
 nav a
 {
     padding: $large-nav-padding;
 }
-.flex-container div
+main div
 {
     flex-basis: 25%;
 }

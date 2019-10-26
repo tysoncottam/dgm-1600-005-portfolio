@@ -122,17 +122,22 @@ nav a
     text-decoration: none;
 }
 
-nav li:hover
+nav li:hover,
+.active:hover
 {
-    background-color: darken($website-theme, 13%);
+    background-color: darken($website-theme, 18%);
     transition: background-color 0.2s;
 }
 
-nav li.active
+.active
 {
-    background-color: darken($website-theme, 15%);
+    background-color: darken($website-theme, 20%);
 }
 
+.active a
+{
+    color: #fff;
+}
 
 /* --------------- main --------------- */
 
@@ -163,6 +168,13 @@ main img
     box-shadow: 5px 5px 50px #959595;
     border: 3px solid rgb(235, 235, 235);
     border-radius: 10px;
+    transform: scale(0.97);
+    transition: transform 0.3s;
+}
+
+main img:hover
+{
+    transform: scale(1);
 }
 
 main p

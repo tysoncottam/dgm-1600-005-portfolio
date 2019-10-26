@@ -122,11 +122,9 @@ nav a
     text-decoration: none;
 }
 
-nav li:hover,
-.active:hover
+.active a
 {
-    background-color: darken($website-theme, 18%);
-    transition: background-color 0.2s;
+    color: #fff;
 }
 
 .active
@@ -134,9 +132,11 @@ nav li:hover,
     background-color: darken($website-theme, 20%);
 }
 
-.active a
+nav li:hover,
+.active:hover
 {
-    color: #fff;
+    background-color: darken($website-theme, 18%);
+    transition: background-color 0.3s;
 }
 
 /* --------------- main --------------- */

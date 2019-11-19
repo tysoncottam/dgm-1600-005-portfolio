@@ -1,4 +1,4 @@
-import { people } from '/DGM-1600-ScriptingWeb/starwars-api/assets/people.js'
+import { people } from '../assets/people.js'
 
 let mainArea = document.querySelector('main')
 

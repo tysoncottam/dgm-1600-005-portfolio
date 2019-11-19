@@ -44,7 +44,7 @@ function populateDOM(single_pokemon)
     name.textContent = single_pokemon.name
     height.textContent = single_pokemon.height
 
-    pic.src = `../images/${pokeNum}.png`
+    pic.src = `./images/${pokeNum}.png`
 
     pokeDiv.appendChild(name)
     pokeDiv.appendChild(pic)

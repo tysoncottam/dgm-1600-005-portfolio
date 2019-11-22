@@ -85,7 +85,7 @@ function populateDOM(single_pokemon)
     name.textContent = single_pokemon.name[0].toUpperCase()+single_pokemon.name.slice(1)
     
     pic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
-
+    
     pokeDiv.appendChild(name)
     pokeDiv.appendChild(pic)
 
@@ -106,13 +106,19 @@ function fillCardBack(secondDivForFlip, data)
 {
     let type = document.createElement('h3')
     let pokeHP = document.createElement('h3')
+    let move = document.createElement('h3')
     let height = document.createElement('h3')
+    let weight = document.createElement('h3')
     type.textContent = `Type: ${data.types[0].type.name[0].toUpperCase()+data.types[0].type.name.slice(1)}`
+    move.textContent = `Move: ${data.moves[0].move.name[0].toUpperCase()+data.moves[0].move.name.slice(1)}`
     pokeHP.textContent = `HP: ${data.stats[0].base_stat}`
     height.textContent = `Height: ${data.height}`
+    weight.textContent = `Weight: ${data.weight}`
     secondDivForFlip.appendChild(type)
+    secondDivForFlip.appendChild(move)
     secondDivForFlip.appendChild(pokeHP)
     secondDivForFlip.appendChild(height)
+    secondDivForFlip.appendChild(weight)
 }
 
 function getPokeNumber(id)

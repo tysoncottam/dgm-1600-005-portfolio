@@ -67,6 +67,8 @@ function populateDOM(single_pokemon)
     let card = document.createElement('div')
     let pokeDiv = document.createElement('div')
     let secondDivForFlip = document.createElement('div')
+    let div1 = document.createElement('div')
+    let div2 = document.createElement('div')
     let name = document.createElement('h3')
 
     let pic = document.createElement('img')
@@ -75,6 +77,8 @@ function populateDOM(single_pokemon)
     
     scene.setAttribute('class', 'scene')
     card.setAttribute('class', 'card')
+    div1.setAttribute('class', 'div1')
+    div2.setAttribute('class', 'div2')
     card.setAttribute('id', 'toggle-back')
     pokeDiv.setAttribute('class', 'charDivs card-front')
     secondDivForFlip.setAttribute('class', 'charDivs card-back')
@@ -86,8 +90,11 @@ function populateDOM(single_pokemon)
     
     pic.src = `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeNum}.png`
     
-    pokeDiv.appendChild(name)
-    pokeDiv.appendChild(pic)
+    div1.appendChild(name)
+    div2.appendChild(pic)
+
+    pokeDiv.appendChild(div1)
+    pokeDiv.appendChild(div2)
 
     card.appendChild(pokeDiv)
     card.appendChild(secondDivForFlip)

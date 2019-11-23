@@ -338,6 +338,7 @@ main p
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
+    backface-visibility: hidden;
 }
 
 .div1,
@@ -361,6 +362,7 @@ main p
     position: absolute;
     margin: 0;
     padding: 15px;
+    backface-visibility: hidden;
     h3
     {
         padding: 0;

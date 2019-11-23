@@ -146,6 +146,7 @@ main
     display: flex;
     flex-wrap: wrap;
     color: $white-color;
+    padding-top: 0px;
 }
 
 main h2
@@ -180,4 +181,22 @@ main img:hover
 main p
 {
     margin-top: 5px;
+}
+
+.button-area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    button
+    {
+        width: 225px;
+        height: 50px;
+        margin: 10px;
+        background-color: $website-theme;
+        border-radius: 10px;
+    }
 }

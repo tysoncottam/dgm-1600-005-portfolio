@@ -1,64 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Derrick Bills Senators</title>
-      <!--------------- styles --------------->
+<html lang="en">
+<!------------------------------ head ------------------------------>
+    <head>
+        <!--------------- metas --------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Unit 2 Assignment">
+        <meta name="author" content="Tyson Cottam">
+
+        <!--------------- styles --------------->
         <link href="css/styles.css" rel="stylesheet">
-      <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-  </head>
+        <link href="#" rel="shortcut icon" >
+        <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet">
 
-  <body>
-    <a href="index.html">Back To portfolio</a>
-    <div class="top">
-      <h1 class="title">
-        United States Senators Data & Display
-      </h1>
-      <p class="subtitle">Used with Bulma CSS <strong>Framework</strong>!</p>
-      <label class="custom-select"
-        >Choose An Option To Display Senators:
-        <select class="senator" name="select">
-          <option value="">Select An Option…</option>
-          <option value="Utah Senators">Utah Senators</option>
-          <option value="Democrats">Democrats</option>
-          <option value="Republicans">Republicans</option>
-          <option value="All Senators">All Senators</option>
-          <option value="All Sen By Age">All Senators(Sorted by age)</option>
-        </select>
-      </label>
-      <div class="result"></div>
-      <div class="result2"></div>
-    </div>
+        <!--------------- google fonts --------------->   
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
+        
+        <!--------------- title --------------->
+        <title>Senators Project</title>
+    </head>
+    
+<!------------------------------ body ------------------------------>
+    <body>
+        <section class="header-section">
+            <div class="header-section-container">
+                <h1>Senators</h1>
+            </div>
+        </section>
+        
+        <section class="dropdown-section">
+            <div class="dropdown-section-container">
+                <select class="senator" name="select">
+                    <option value="">Find Senators…</option>
+                    <option value="All Senators">All Senators</option>
+                    <option value="All Senators By Age">All Senators By Age</option>
+                    <option value="Democrats">Democrats</option>
+                    <option value="Republicans">Republicans</option>
+                    <option value="Utah Senators">Utah Senators</option>
+                </select>
+                <div class="filter-display"></div>
+                <div class="votes-display"></div>
+            </div>
+        </section>
 
-    <main>
-      <section class="section">
-        <div class="container"></div>
-        <div class="container2"></div>
-      </section>
-    </main>
-    <section class="top">
-      <h3 class="title">
-        List of features included for Assignment Requirement
-      </h3>
-      <div>
-        <ul class="subtitle">
-          <li>Header summarizes what the page is about</li>
-          <li>Add items to the DOM</li>
-          <li>Use of filter, map & reduce</li>
-          <li>Grid of at least 25 images</li>
-          <li>Click Event Handling</li>
-          <li>Basic CSS animations</li>
-          <li>Grid or Flexbox to display card grid</li>
-          <li>Select Feature to display data</li>
-        </ul>
-      </div>
-    </section>
-    <script src="js/main.js"></script>
-  </body>
+        <!--------------- main --------------->
+        <main>
+          <section class="card-section">
+            <div class="card-section-container"></div>
+          </section>
+        </main>
+
+        <!--------------- footer --------------->    
+        <script src="js/main.js"></script>
+    </body>
 </html>

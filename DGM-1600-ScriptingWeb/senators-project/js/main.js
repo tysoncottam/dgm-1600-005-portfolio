@@ -219,10 +219,12 @@ function cardContent(senator) {
     contentDiv.setAttribute("class", "content")
     officeDiv.setAttribute("class", "officeDiv")
     phoneDiv.setAttribute("class", "phoneDiv")
-    ageDiv.setAttribute("class", "phoneDiv")
+    ageDiv.setAttribute("class", "ageDiv")
     officeDiv.textContent = `OFFICE: ${senator.office}`
     phoneDiv.textContent = `PHONE: ${senator.phone}`
     ageP.textContent = `AGE: ${senator.age}`
+    
+    senatorStateDiv.setAttribute("class", "senatorStateDiv")
 
     // append to add to the html page
     senatorNameDiv.appendChild(titleP)

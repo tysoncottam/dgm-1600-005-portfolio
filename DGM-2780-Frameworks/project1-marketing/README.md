@@ -44,6 +44,8 @@ We will be using git throughout the semester.  Each project much be forked and 
 
 - [ ] Build your website following the project requirements as your guide
 
+https://tysoncottam.netlify.com/dgm-2780-frameworks/project1-marketing/
+
 - [ ] Provide the URL of the website you mimicked at the bottom of the readme file
 
 - [ ] When you have completed the website, submit your repository URL

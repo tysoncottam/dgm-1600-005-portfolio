@@ -98,3 +98,31 @@ document.querySelector('#make-lowercase').onclick = () =>
     listTrees()
     errorElement.innerHTML = ``
 }
+
+// NAME OF 3RD ITEM
+document.querySelector('#name-of-num-3').onclick = () => 
+{
+    if (treesArray.length > 2)
+        {
+            let thridTree = treesArray[2]
+            errorElement.innerHTML = `The 3rd tree is ${thridTree}`
+        }
+    else
+        {
+            errorElement.innerHTML = `Error Code: 61BB <br><br> Cannot find 3rd tree. Array length is too small. <br>`
+        }
+}
+
+// NAME OF 4TH ITEM
+document.querySelector('#name-of-num-4').onclick = () => 
+{
+    if (treesArray.length > 3)
+        {
+            let fourthTree = treesArray[3]
+            errorElement.innerHTML = `The 4th tree is ${fourthTree}`
+        }
+    else
+        {
+            errorElement.innerHTML = `Error Code: 12NN <br><br> Cannot find 4th tree. Array length is too small. <br>`
+        }
+}

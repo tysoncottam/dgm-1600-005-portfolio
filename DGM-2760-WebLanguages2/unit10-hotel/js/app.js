@@ -35,6 +35,6 @@ function hotelInfo(event)
     document.querySelector("#rooms").textContent = `${hotelChoice.rooms}`
     document.querySelector("#gym").textContent = `${hotelChoice.gym}`
     document.querySelector("#type").textContent = `${hotelChoice.roomTypes}`
-    document.querySelector("#picture").src = `../images/${hotelChoice.picture}`
+    document.querySelector("#picture").src = `./images/${hotelChoice.picture}`
     //document.getElementById("picture").src = `images/${hotelChoice.picture}`
 }

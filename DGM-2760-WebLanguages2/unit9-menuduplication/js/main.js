@@ -1,15 +1,23 @@
+
+
 function duplicateMenu()
 {
-    // get all the anchor elements from the top menu
+    let smallArea = document.querySelector('#smallNavArea')
     let topList = document.querySelectorAll('ul#primaryNavigation li a')
-    
-    // create the new list items for the bottom of the page
     let newList = document.createElement('ul')
-    
+
     topList.forEach(menuItem =>{
         let newLI = document.createElement('li')
+        let newLink = document. createElement('a')
+        newLink.setAttribute('href', menuItem.getAttribute('href'))
+        newLink.innerHTML = menuItem.innerHTML
+        
+        newLI.appendChild(newLink)
+        newList.appendChild(newLI)
         
     })
+    smallArea.appendChild(newList)
 }
 
 duplicateMenu()
+

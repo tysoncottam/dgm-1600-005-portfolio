@@ -1,5 +1,3 @@
-
-
 function duplicateMenu()
 {
     let smallArea = document.querySelector('#smallNavArea')
@@ -20,4 +18,3 @@ function duplicateMenu()
 }
 
 duplicateMenu()
-

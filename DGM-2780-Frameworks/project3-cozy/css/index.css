@@ -448,6 +448,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  opacity: 0;
 }
 .hero-main-message {
   padding: 50px 0px;
@@ -810,6 +811,8 @@ header {
   border-bottom: 2px solid #fff;
   width: 230px;
   border-bottom: 3px solid #fff;
+  opacity: 0;
+  transform: translateX(-250%);
 }
 .read-section .read-area h3 {
   font-size: 110%;
@@ -817,6 +820,8 @@ header {
   line-height: 1.5;
   letter-spacing: 3px;
   padding: 50px 0;
+  opacity: 0;
+  transform: translateX(100%);
 }
 .read-section .read-area button {
   display: flex;
@@ -838,6 +843,8 @@ header {
   transition: color 0.3s, border 0.3s;
   cursor: pointer;
   margin: 0;
+  opacity: 0;
+  transform: translateX(-250%);
 }
 .read-section .read-area button:hover {
   color: #fd79a8;

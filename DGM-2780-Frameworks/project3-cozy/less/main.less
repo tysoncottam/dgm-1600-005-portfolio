@@ -188,13 +188,14 @@ header
 {
     .col-flex();
     align-items: flex-start;    
+    opacity: 0;
 }
 
 .hero-main-message
 {
     padding: 50px 0px;
     border-bottom: 2px solid #fff;
-    width: 75vw;
+    width: 75vw;    
     h1
     {
         font-size: 450%;
@@ -301,17 +302,23 @@ header
         {
             .custom-lead();
             border-bottom: 3px solid #fff;
+            opacity: 0;
+            transform: translateX(-250%);
         }
         h3
         {
             .custom-paragraph();
             padding: 50px 0;
+            opacity: 0;
+            transform: translateX(100%);
         }
         button
         {
             .row-flex();
             .custom-btn();
             margin: 0;
+            opacity: 0;
+            transform: translateX(-250%);
         }
     }
 }
